@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'knewave';
+    src: url('/FONTS/Knewave/Knewave-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'inter';
+    src: url('/FONTS/Inter/Inter-VariableFont_opsz\,wght.ttf');
+}
+@font-face {
+    font-family: 'inter';
+    src: url('/FONTS/Inter/Inter-VariableFont_opsz\,wght.ttf');
+}
+*{
+    margin: 0;
+}
+nav{
+    background-color: #1a1a1a;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+}
+.websiteName{
+    margin: 1rem 0rem 1rem 1rem;
+}
+.wordNatural{
+    color: #4F714B;
+    font-family: 'knewave', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+.letterN, .letterR{
+    font-size: 36px;
+    align-self: flex-end;
+    line-height: 0.9;
+}
+.snippetAtural, .snippetEsources{
+    font-size: 16px;
+    align-self: flex-end;
+    line-height: 0.9;
+}
+.wordResources{
+    color: #ffffff;
+    font-family: 'knewave', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+.navButtons{
+    position: absolute;
+    right: 15px;
+    top: -15px;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.navButtons button{
+    background-color: #4F714B;
+    color: #1a1a1a;
+    border: none;
+    padding: 30px 8px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    cursor: pointer;
+    font-family: 'inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+    /*Adjust for media query landscape mode*/
+.landingPage{
+    background-image: url('/IMGS/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.landingText{
+    color: #ffffff;
+    font-family: 'knewave', sans-serif;
+    font-size: clamp(4rem, 5rem, 10px);
+    line-height: 1.25;
+    align-self: flex-end;
+    margin-left: 1rem;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    padding-bottom: 1rem;
+}
+#lifelines{
+    color: #ff3232;
+}
+
+.introPage, .dataPage{
+    background-color: #1a1a1a;
+    width: 100vw;
+    height: fit-content;
+    text-align: center;
+    padding: 2rem 0rem 2rem 0rem;
+}
+.title{
+    font-family: 'knewave', sans-serif;
+    color: #4F714B;
+    font-size: clamp(2rem, 2rem, 7rem);
+}
+#mushroomIMG{
+    width: 80%;
+    height: auto;
+    border-radius: 20px 20px 20px 20px;
+    margin: 2rem 0rem 2rem 0rem;
+}
+.subtitle{
+    font-family: 'inter', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+.introPage p{
+    font-family: 'inter', sans-serif;
+    font-size: 0.75rem;
+    padding: 0rem 2rem 0rem 2rem;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.data{
+    margin-top: 2rem;
+    font-family: 'inter', sans-serif;
+    color: #ffffff;
+    padding: 0rem 2rem 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.infographics1, .infographics2, .infographics3, .infographics4{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.infographics1 .percentage{
+    border-radius: 50%;
+    background-image: conic-gradient(#ff3232 0deg 37.7deg, #1a1a1a 37.7deg 360deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    flex-shrink: 0;  
+    flex-grow: 0;    
+    min-width: 120px; 
+    min-height: 120px;
+}
+.infographics2 .percentage{
+    border-radius: 50%;
+    background-image: conic-gradient(#ff3232 0deg 28deg, #1a1a1a 28deg 360deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    flex-shrink: 0;  
+    flex-grow: 0;    
+    min-width: 120px; 
+    min-height: 120px;
+}
+
+.percentage::after{
+    content: '';  
+    width: 100px;  
+    height: 100px; 
+    background-color: #2e2e2e;
+    position: absolute;
+    flex-shrink: 0;  
+    flex-grow: 0;    
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: inherit;
+}
+
+.percentage span{
+    position: relative;
+    z-index: 1;
+}
+
+.number{
+    color: #ff3232;
+    font-family: 'inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    min-width: 120px;
+    min-height: 120px;
+    align-items: center;
+}
+
+
+
+
+
