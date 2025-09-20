@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'knewave';
-    src: url('/FONTS/Knewave/Knewave-Regular.ttf') format('truetype');
+    src: url(FONTS/Knewave/Knewave-Regular.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'inter';
-    src: url('/FONTS/Inter/Inter-VariableFont_opsz,wght.ttf');
+    src: url(FONTS/Inter/Inter-VariableFont_opsz,wght.ttf);
     font-weight: 100 900;
     font-style: normal;
 
@@ -35,8 +35,10 @@ a:hover{
     color: #1a1a1a;
     text-decoration: none;
 }
-.websiteName{
-    margin: 1rem 0rem 1rem 1rem;
+.websiteName {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
 }
 .wordNatural{
     color: #4F714B;
@@ -85,7 +87,7 @@ a:hover{
 
 }
 .landingPage{
-    background-image: url('/IMGS/1.jpg');
+    background-image: url(IMGS/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -255,28 +257,28 @@ a:hover{
     z-index: -1;
 }
 .causeCard.crisis::before{
-    background-image: url(/IMGS/pexels-roshanravi-33940296.jpg);
+    background-image: url(IMGS/pexels-roshanravi-33940296.jpg);
 }
 .causeCard.habitat::before{
-    background-image: url(/IMGS/pexels-tomfisk-6789375.jpg);
+    background-image: url(IMGS/pexels-tomfisk-6789375.jpg);
 }
 .causeCard.displace::before{
-    background-image: url(/IMGS/pexels-alain-nkingi-290332318-13415997.jpg);
+    background-image: url(IMGS/pexels-alain-nkingi-290332318-13415997.jpg);
 }
 .causeCard.livelihood::before{
-    background-image: url(/IMGS/pexels-omerderinyar-19736114.jpg);
+    background-image: url(IMGS/pexels-omerderinyar-19736114.jpg);
 }
 .causeCard.climate::before{
-    background-image: url(/IMGS/industrial.jpg);
+    background-image: url(IMGS/industrial.jpg);
 }
 #overpopCard::before {
-    background-image: url('/IMGS/overpopulation.jpg');
+    background-image: url(IMGS/overpopulation.jpg);
 }
 #industCard::before {
-    background-image: url('/IMGS/industrial.jpg');
+    background-image: url(IMGS/industrial.jpg);
 }
 #susPracCard::before {
-    background-image: url('/IMGS/policy.jpg'); 
+    background-image: url(IMGS/policy.jpg); 
 }
 .cardTitle {
     font-family: 'inter', sans-serif;
@@ -383,13 +385,13 @@ a:hover{
     z-index: -1; 
 }
 .doCard.reduce::before {
-    background-image: url('/IMGS/pexels-shvetsa-11286083.jpg');
+    background-image: url(IMGS/pexels-shvetsa-11286083.jpg);
 }
 .doCard.sustain::before {
-    background-image: url('/IMGS/pexels-pixabay-258083.jpg');
+    background-image: url(IMGS/pexels-pixabay-258083.jpg);
 }
 .doCard.advocate::before {
-    background-image: url('/IMGS/pexels-polina-tankilevitch-8203158.jpg');
+    background-image: url(IMGS/pexels-polina-tankilevitch-8203158.jpg);
 }
 .doCard .cardTitle {
     font-family: 'inter', sans-serif;
@@ -461,7 +463,7 @@ a:hover{
         font-size: 0.8rem;
     }
     .landingPage {
-        height: 100vh;
+        padding-top: 120px;;
     }
     .landingText {
         font-size: clamp(2rem, 4vw, 3rem);
@@ -643,7 +645,7 @@ a:hover{
         font-size: 1rem;
     }
     .landingPage {
-        height: 100vh;
+        padding-top: 120px;;
     }
     .landingText {
         font-size: clamp(2rem, 10rem, 15rem);
@@ -715,8 +717,7 @@ a:hover{
     .causeCard, .doCard {
         margin: 0.5rem 1rem;
         width: 20%;
-        height: 139px;
-        flex-shrink: 0
+        min-height: 200px
     }
     .cardTitle {
         font-size: clamp(0.6rem, 3vw, 1rem);
