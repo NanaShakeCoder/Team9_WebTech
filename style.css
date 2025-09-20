@@ -35,10 +35,8 @@ a:hover{
     color: #1a1a1a;
     text-decoration: none;
 }
-.websiteName {
-    display: flex;
-    align-items: center;
-    gap: 5px; 
+.websiteName{
+    margin: 1rem 0rem 1rem 1rem;
 }
 .wordNatural{
     color: #4F714B;
